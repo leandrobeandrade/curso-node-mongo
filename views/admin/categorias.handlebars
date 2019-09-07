@@ -1,0 +1,41 @@
+<h2>Lista de Categorias 
+    <a href="/admin/categorias/add" class="float-right">
+        <button class="btn btn-success">Nova Categoria</button>
+    </a>
+</h2>
+
+{{#each categorias}}
+<div class="card mt-4 mb-5">
+    <div class="card-body">
+        <h4>{{nome}}
+            <span class="ml-5">
+                <a href="/admin/categorias/edit/{{id}}"><button class="btn btn-warning btn-outline btn-sm">Editar</button></a>
+            </span>
+            </h4>
+        <p>Slug: {{slug}}</p>
+        <small>Data: {{date}}</small>
+        <form action="/admin/categorias/delete/{{_id}}" method="POST">
+            <input type="hidden" name="id" value="{{_id}}">
+            <button type="submit" class="btn btn-danger float-right">Excluir</button>
+        </form>
+    </div>
+</div>
+{{else}}
+<div class="card mt-3">
+  <div class="card-body">
+    Nenhuma categoria cadastrada!
+  </div>
+</div>
+{{/each}}
+
+<br><br>
+
+<script>
+    let alerta = document.getElementsByClassName('alert')[0]
+
+    if(alerta) {
+        setTimeout(() => {
+            alerta.style.display = 'none';
+        }, 3000)
+    }
+</script>
