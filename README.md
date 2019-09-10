@@ -1,4 +1,4 @@
-# Curso de Node utilizando o banco de dados Mysql
+# Curso de Node utilizando o banco de dados Mongo
 
 ## Realizado por Victor Lima
 
@@ -13,7 +13,7 @@ link do curso: https://www.youtube.com/playlist?list=PLJ_KhUnlXUPtbtLwaxxUxHqvcN
 
 # Requisitos
 
-- Possuir Mysql instalado na máquina
+- Possuir Mongo instalado na máquina
 
 # Resultado
 
