@@ -9,7 +9,7 @@ link do curso: https://www.youtube.com/playlist?list=PLJ_KhUnlXUPtbtLwaxxUxHqvcN
 - Clonar repositório: `git clone` https://github.com/leandrobeandrade/curso-node-mysql.git
 - Instalar dependências: `npm install`
 - Rodar projeto: `nodemon` index
-- Acesso: `localhost:8081`
+- Acesso: `localhost:3000`
 
 # Requisitos
 
